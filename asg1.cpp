@@ -16,7 +16,7 @@ int main() {
 
     long long sum = 0;
 
-    // S? d?ng OpenMP ?? tính t?ng song song
+    // S? d?ng OpenMP ?? tÃ­nh t?ng song song
 #pragma omp parallel for reduction(+:sum)
     for (int i = 0; i < N; i++) {
         sum += arr[i];
